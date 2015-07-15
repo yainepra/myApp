@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html data-ng-app="">
+
+<head>
+<title>Using AngularJS Directives and Data Binding</title>
+</head>
+
+<div class="container" data-ng-init="names=['Dave','Heedy','Napur','Rachel','Napur']">
+
+<!--<body data-ng-init="names=['Dave','Heedy','Rachel']">-->
+
+<body>
+
+<h3>Looping with the ng-repeat Directive</h3>
+
+<ul>
+    <li data-ng-repeat="personName in names">{{ personName }}</li>
+</ul>
+Name:
+<br /><input type="text" data-ng-model="name" />{{ name }}
+
+</div>
+<script src="Scripts/angular.min.js"></script>
+</body>
+
+</html>
